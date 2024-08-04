@@ -1,5 +1,9 @@
+import About from "@/components/About";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
+import Skills from "@/components/Skills";
+
 import { navItems } from "@/data";
 import Image from "next/image";
 
@@ -9,6 +13,9 @@ export default function Home() {
     <div className="max-w-7xl w-full">
       <FloatingNav navItems={navItems}/>
       <Hero />
+      <About/>
+      <Skills/>
+      <Projects/>
       
     </div>
   </main>

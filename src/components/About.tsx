@@ -1,51 +1,65 @@
-import Image from 'next/image';
-import placeholder from '../../public/placeholder.jpg'
+import Image from "next/image";
+import placeholder from "../../public/placeholder.jpg";
+import { StickyScroll } from "./ui/sticky-scroll-reveal";
 
-
+const content = [
+  {
+    title: "Collaborative Editing",
+    description:
+      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        Collaborative Editing
+      </div>
+    ),
+  },
+  {
+    title: "Real time changes",
+    description:
+      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+    content: (
+      <div className="h-full w-full  flex items-center justify-center text-white">
+        <Image
+          src="/linear.webp"
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="linear board demo"
+        />
+      </div>
+    ),
+  },
+  {
+    title: "Version control",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+        Version control
+      </div>
+    ),
+  },
+  {
+    title: "Running out of content",
+    description:
+      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+        Running out of content
+      </div>
+    ),
+  },
+];
 function About() {
   return (
-    <section className="flex flex-col items-center gap-5">
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold dark:text-white text-center">
-          About Me
-        </h1>
-
-        <div className="dark:bg-black bg-white max-w-lg dark:text-white text-xl p-5 font-thin flex flex-col items-center rounded-lg border-2 gap-5 m-1">
-          <Image
-            src={placeholder}
-            alt="sargam's image"
-            className="rounded-full border-blue-500 border-4"
-            width={200}
-            height={200}
-          />
-          <p>
-            I am Sargam Poudel, a CS sophomore with a huge interest in
-            technology.
-          </p>
-          <p>
-            Regardless of wherever I am right now, I was born and brought up in
-            
-          </p>
-          <p>
-            I wrote my first code after the lockdown in 2021, and since then,
-            I&apos;ve been very fascinated with doing this and even considering
-            it as my profession.
-          </p>
-          <p>
-            Github is my favorite place to be. I do a lot of things there and
-            contribute heavily to Open Source.
-          </p>
-          <p>
-            There are a few people who helped me get started writing code. I
-            have a huge respect for them.
-          </p>
-          <p>
-            Now I&apos;ve attained enough knowledge so that I can give back to
-            the community. I really like helping others who are trying to get
-            into this field.
-          </p>
-        </div>
-      </section>
-  )
+    <div className="py-20">
+        <h1 className="heading">
+        A small selection of{" "}
+        <span className="text-purple">recent projects</span>
+      </h1>
+      <StickyScroll content={content} />
+    </div>
+  );
 }
 
-export default About
+export default About;
