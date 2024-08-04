@@ -3,7 +3,7 @@ import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Skills from "@/components/Skills";
-
+import Footer from "@/components/Footer";
 import { navItems } from "@/data";
 import Image from "next/image";
 
@@ -16,6 +16,7 @@ export default function Home() {
       <About/>
       <Skills/>
       <Projects/>
+      <Footer/>
       
     </div>
   </main>
