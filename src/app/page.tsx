@@ -6,6 +6,7 @@ import Skills from "@/components/Skills";
 import Footer from "@/components/Footer";
 import { navItems } from "@/data";
 import Image from "next/image";
+import Experience from "@/components/Experience";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <About/>
       <Skills/>
       <Projects/>
+      <Experience/>
       <Footer/>
       
     </div>

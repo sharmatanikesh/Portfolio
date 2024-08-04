@@ -1,61 +1,52 @@
 import Image from "next/image";
-import placeholder from "../../public/placeholder.jpg";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
+import tanikesh from '../../public/Tanikesh3.png'
 
 const content = [
   {
-    title: "Collaborative Editing",
+    title: "About Me",
     description:
-      "Work together in real time with your team, clients, and stakeholders. Collaborate on documents, share ideas, and make decisions quickly. With our platform, you can streamline your workflow and increase productivity.",
-    content: (
-      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Collaborative Editing
-      </div>
-    ),
-  },
-  {
-    title: "Real time changes",
-    description:
-      "See changes as they happen. With our platform, you can track every modification in real time. No more confusion about the latest version of your project. Say goodbye to the chaos of version control and embrace the simplicity of real-time updates.",
+      "I’m Tanikesh Sharma, a Fullstack Developer with expertise in Next.js and React.js. I’m passionate about building dynamic, efficient web applications and constantly seek to push the limits of modern web technologies.",
     content: (
       <div className="h-full w-full  flex items-center justify-center text-white">
         <Image
-          src="/linear.webp"
+          src={tanikesh}
           width={300}
           height={300}
           className="h-full w-full object-cover"
-          alt="linear board demo"
+          alt="About Me"
         />
       </div>
     ),
   },
+  
   {
-    title: "Version control",
+    title: "My Interests",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "I’m currently delving into the exciting world of Web3 and exploring Solana to stay ahead in the evolving tech landscape.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-        Version control
+        My Interests
       </div>
     ),
   },
   {
-    title: "Running out of content",
+    title: "Feel Free to Contact Me",
     description:
-      "Experience real-time updates and never stress about version control again. Our platform ensures that you're always working on the most recent version of your project, eliminating the need for constant manual updates. Stay in the loop, keep your team aligned, and maintain the flow of your work without any interruptions.",
+      "If you’re interested in collaborating or just want to discuss the latest in web development and blockchain, don’t hesitate to reach out. Let’s connect and explore new possibilities together!",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-        Running out of content
+        Feel Free to Contact Me
       </div>
     ),
   },
 ];
 function About() {
   return (
-    <div className="py-20">
-        <h1 className="heading">
-        A small selection of{" "}
-        <span className="text-purple">recent projects</span>
+    <div className="py-20" id="about">
+        <h1 className="heading mb-2 ">
+            About Me
+        
       </h1>
       <StickyScroll content={content} />
     </div>
