@@ -40,7 +40,6 @@ const Hero = () => {
             <Button
               name="Show my work"
               icon={<FaLocationArrow />}
-              position="right"
             />
           </a>
         </div>
