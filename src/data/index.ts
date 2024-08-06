@@ -13,7 +13,7 @@ export const navItems = [
       des: "Developed a Paytm service app that enables users to transfer money and view transaction history, leveraging a monorepo architecture with Prisma, Next.js, and Node.js for a robust and efficient experience",
       img: "/MonoRepo.png",
       iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-      link: "https://github.com/sharmatanikesh/ForensiBus/tree/master",
+      link: "https://github.com/sharmatanikesh/Paytm-App",
     },
     {
       id: 2,
