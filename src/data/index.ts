@@ -2,12 +2,21 @@ export const navItems = [
     { name: "About Me", link: "#about" },
     { name: "Skills", link: "#skills" },
     { name: "Project", link: "#project" },
+    {name:"Experience", link:"#experience"},
     { name: "Contact Me", link: "#contact" },
   ];
 
   export const projects = [
     {
       id: 1,
+      title: "Paytm Service App ",
+      des: "Developed a Paytm service app that enables users to transfer money and view transaction history, leveraging a monorepo architecture with Prisma, Next.js, and Node.js for a robust and efficient experience",
+      img: "/MonoRepo.png",
+      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      link: "https://github.com/sharmatanikesh/ForensiBus/tree/master",
+    },
+    {
+      id: 2,
       title: "ForensiBus - Android App",
       des: "The ForensiBus app is a mobile application developed for the company ForensiBus. It provides a convenient way to access the company's website using a WebView.",
       img: "/forensibus.png",
@@ -15,28 +24,36 @@ export const navItems = [
       link: "https://github.com/sharmatanikesh/ForensiBus/tree/master",
     },
     {
-      id: 2,
-      title: "E-Library Dashboard",
+      id: 3,
+      title: "E-Library Admin Dashboard",
       des: "his web application allows users to manage their digital library efficiently. ",
-      img: "/E-Lib.png",
+      img: "/E-lib.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
       link: "https://github.com/sharmatanikesh/BookApiDashBoard",
     },
     {
-      id: 3,
+      id: 4,
       title: "E-Library Api",
       des: "This project is a E-Library Dashboard system implemented in TypeScript. It provides APIs to create, update, list, get and delete books",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+      img: "/BookApi.png",
+      iconLists: [ "/ts.svg"],
       link: "https://github.com/sharmatanikesh/BookAPI",
     },
     {
-      id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
+      id: 5,
+      title: "Next.js Book Download Platform",
+      des: "Developed a Next.js website where users can easily download books, providing a streamlined platform for digital content access.",
+      img: "/Next-js_lib.png",
       iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
       link: "/ui.apple.com",
+    },
+    {
+      id: 6,
+      title: "Blogging website",
+      des: "This project includes both frontend and backend components for creating a full-fledged blogging platform.",
+      img: "/WorkerBlog.png",
+      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      link: "https://github.com/sharmatanikesh/Blogging",
     },
   ];
   
