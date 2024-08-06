@@ -1,3 +1,5 @@
+import { NeovimIcon } from '@/components/icons/Neovim';
+import { RedisIcon } from '@/components/icons/Redis';
 import {
     BashIcon,
     DockerIcon,
@@ -43,32 +45,40 @@ import {
         icon: <MongoIcon />,
       },
       {
-        name: 'express',
+        name: 'Express',
         icon: <ExpressIcon />,
       },
       {
-        name: 'react',
+        name: 'React',
         icon: <ReactIcon />,
       },
      
-      { name: 'nextjs', icon: <NextIcon /> },
+      { name: 'Nextjs', icon: <NextIcon /> },
       {
-        name: 'tailwindcss',
+        name: 'Tailwindcss',
         icon: <TailwindIcon />,
       },
       {
-        name: 'git',
+        name: 'Git',
         icon: <GitIcon />,
       },
       {
-        name: 'docker',
+        name: 'Docker',
         icon: <DockerIcon />,
       },
      
       {
-        name: 'linux',
+        name: 'Linux',
         icon: <LinuxIcon />,
       },
+      {
+        name:'Neovim',
+        icon:<NeovimIcon/>
+      },
+      {
+        name:'Redis',
+        icon:<RedisIcon/>
+      }
       
   ];
   

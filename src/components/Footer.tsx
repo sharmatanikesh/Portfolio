@@ -20,7 +20,7 @@ const Footer = () => {
         <h1 className="heading lg:max-w-[45vw] mb-5">
         Contact me
         </h1>
-        <a href="mailto:contact@jsmastery.pro">
+        <a href="mailto:sharmatanikesh@gmail.com">
           <Button name="Let's get in touch" icon={<FaLocationArrow />} />
         </a>
       </div>
